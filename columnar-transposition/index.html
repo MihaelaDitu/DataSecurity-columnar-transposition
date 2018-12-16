@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <div>
+        <p>Plaintext</p><br/>
+        <textarea id="p" name="p" rows="4" cols="50">column transposition</textarea><br><br>
+    </div>
+    <div>
+        <label>keyword = </label>
+        <input id="key" name="key" size="10" value="key" type="text" />
+        
+        <label>pad character = </label>
+        <input id="pc" name="pc" size="1" value="x" type="text" />
+        <br><br>
+    </div>
+    <div>
+        <input type="button" name="btnEn" value="v Encrypt v" onclick="handleEncrypt()" />
+        <input type="button" name="btnDe" value="^ Decrypt ^" onclick="handleDecrypt()" />
+    </div>
+    <div>
+        <p>Ciphertext</p><br/>
+        <textarea id="c" name="c" rows="4" cols="50"></textarea>
+    </div>
+</head>
+
+<body>
+	
+	<script src="./index.js"></script>
+</body>
+
+</html>
